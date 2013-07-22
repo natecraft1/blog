@@ -32,6 +32,9 @@ gem "compass-rails", github: "milgner/compass-rails", ref: "1749c06f15dc4b058427
 
 gem 'zurb-foundation', '~> 4.0.0'
 
+
+
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -43,7 +46,7 @@ end
 
 
 # Use ActiveModel has_secure_password
-#gem 'bcrypt-ruby', '3.1.1.rc1', :require => 'bcrypt'
+gem 'bcrypt-ruby', '~> 3.1.1', :require => 'bcrypt'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -59,9 +62,11 @@ group :test, :development do
 	gem 'rspec-rails'
 	gem 'capybara'
 	gem 'guard-rspec'
-	require 'rbconfig'
+	#require 'rbconfig'
     gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
     gem 'launchy'
     gem 'fuubar'
 
+
 end
+
