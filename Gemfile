@@ -62,5 +62,6 @@ group :test, :development do
 	require 'rbconfig'
     gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
     gem 'launchy'
+    gem 'fuubar'
 
 end
